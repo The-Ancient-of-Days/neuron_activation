@@ -128,7 +128,7 @@ class Neuron:
 
 # Пример использования
 if __name__ == "__main__":
-    features = np.array([0, 2, 3, 4])  # температура, дождь, ветер, друзья
+    features = np.array([0, 2, 3, 4])
     neuron = Neuron(len(features), seed=42)
     scalar = neuron.scalar_product(features)
     activations = neuron.activate(scalar, all_functions=True)
@@ -136,3 +136,4 @@ if __name__ == "__main__":
     print("Результаты функций активации:")
     for func, value in activations.items():
         print(f"{func}: {value:.4f}")
+
